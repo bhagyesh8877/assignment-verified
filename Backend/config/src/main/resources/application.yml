@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          moneyhub:
+            client-id: 8b65f03d-c3ed-4421-8646-0c1abe920a3e
+            client-secret: c524fa6f-4254-460d-832f-e7719a92e1a6
+            redirect-uri: "{baseUrl}/callback"
+            authorization-grant-type: authorization_code
+            scope: openid, accounts
+            authorization-uri: https://auth.moneyhub.co.uk/authorize
+            token-uri: https://auth.moneyhub.co.uk/token
+        provider:
+          moneyhub:
+            issuer-uri: https://auth.moneyhub.co.uk/
